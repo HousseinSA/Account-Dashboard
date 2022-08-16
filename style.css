@@ -96,6 +96,9 @@ h3 {
 .text-muted {
   color: var(--color-dark-info);
 }
+small {
+  color: var(--color-dark-info);
+}
 #message-count {
   padding: 0.2rem 1rem;
   border-radius: 1rem;
@@ -466,15 +469,9 @@ main .insight .middle .progress .number {
   .container {
     width: 97%;
     display: grid;
-    grid-template-columns: 7rem auto 20rem;
+    grid-template-columns: 12rem auto 20rem;
   }
   aside .top h3 {
-    display: none;
-  }
-  aside .side-bar span {
-    width: 5.6rem;
-  }
-  aside .side-bar h3 {
     display: none;
   }
   main .insight {
@@ -495,6 +492,10 @@ main .insight .middle .progress .number {
     display: none;
   }
 }
+.right-section .top {
+  display: flex;
+  justify-content: flex-end;
+}
 /* media query  768px   */
 
 @media screen and (max-width: 768px) {
@@ -503,6 +504,9 @@ main .insight .middle .progress .number {
     grid-template-columns: 1fr;
     gap: 0;
     width: 100%;
+  }
+  main,.right-section {
+    margin: 0 1.4rem;
   }
   aside {
     display: none;
@@ -531,15 +535,12 @@ main .insight .middle .progress .number {
   aside .top .close {
     display: inline-block;
   }
-  aside .side-bar {
-    top: 1rem;
-  }
+ 
   aside .side-bar h3 {
     display: inline-block;
   }
   aside .side-bar a {
-    width: 2rem;
-    height: 2.5rem;
+    height: 3.5rem;
   }
 
   main {
