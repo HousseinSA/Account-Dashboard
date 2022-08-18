@@ -471,6 +471,9 @@ main .insight .middle .progress .number {
     display: grid;
     grid-template-columns: 12rem auto 20rem;
   }
+  aside {
+    display: block;
+  }
   aside .top h3 {
     display: none;
   }
@@ -505,7 +508,8 @@ main .insight .middle .progress .number {
     gap: 0;
     width: 100%;
   }
-  main,.right-section {
+  main,
+  .right-section {
     margin: 0 1.4rem;
   }
   aside {
@@ -535,7 +539,6 @@ main .insight .middle .progress .number {
   aside .top .close {
     display: inline-block;
   }
- 
   aside .side-bar h3 {
     display: inline-block;
   }
